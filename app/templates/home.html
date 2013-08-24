@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+this is home template <br>
+<ul>
+    {% for person in people %}
+    <li>
+        {{person.id}} - {{person.name}}
+    </li>
+    {% endfor %}
+</ul>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method='POST'>
+        {% csrf_token %}
+        {% for input in formulario %}
+        <p>
+            {{input.label}} {{input}} {{input.errors}}
+        </p>
+        {% endfor %}
+        <input type="submit" value="send">
+    </form>
+</body>
+</html>
